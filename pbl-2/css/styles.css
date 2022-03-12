@@ -1,0 +1,104 @@
+/* Initial setup */
+:root {
+  --orange-color: #eb5819;
+  --dark-grey-color: #595959;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Robotica", sans-serif;
+  font-weight: 500;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+/* Main page wrapper  */
+.main-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center center;
+  gap: 5vh;
+  height: 100vh;
+}
+
+/* Main login */
+.main-login {
+  flex-grow: 0;
+  width: calc(15rem + 15vw);
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center center;
+  gap: 3vh;
+}
+
+.main-login > h1 {
+  color: var(--orange-color);
+  font-weight: 700;
+  font-size: calc(1.5rem + 1vw);
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.main-login > input {
+  height: calc(2rem + 2vw);
+  border: calc(0.01rem + 0.1vw) solid var(--dark-grey-color);
+  border-radius: 0.5rem;
+}
+
+.main-login > input,
+.main-login > input::-webkit-input-placeholder {
+  font-size: calc(0.6rem + 0.8vw);
+  padding-left: 1%;
+}
+
+.main-login > button {
+  margin-top: 3vh;
+  height: calc(2rem + 2vw);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--orange-color);
+  color: white;
+  font-weight: 700;
+  font-size: calc(1rem + 0.5vw);
+}
+
+/* Main image */
+.main-image {
+  display: flex;
+  place-content: center center;
+}
+
+.main-image > img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .main-wrapper {
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: auto;
+  }
+
+  .main-image {
+    align-self: center;
+    max-width: 80%;
+    order: -1;
+  }
+
+  .main-login {
+    width: auto;
+    padding: 0 12%;
+  }
+}
