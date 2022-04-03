@@ -12,13 +12,21 @@ h3 {
   font-size: 2rem;
 }
 
-p {
+small {
+  font-size: 1rem;
+}
+
+.about-section__title {
+  font-size: 1.5rem;
+}
+
+.about-section__text {
   line-height: 19px;
   color: black;
 }
 
-small {
-  font-size: 1rem;
+.course-title {
+  font-size: clamp(1.5rem, calc(1rem + 4vw), 2.5rem);
 }
 
 button,
@@ -28,11 +36,25 @@ button,
 }
 
 .pricing > p {
+  line-height: 2.5rem;
   font-size: clamp(1rem, calc(1rem + 1.8vw), 1.8rem);
 }
 
 .header--emphasis {
   color: black;
+}
+
+.about-author {
+  padding: 3rem 1rem 0;
+  background-color: #d4d9d6;
+}
+
+.about-author > h3 {
+  font-size: 40px;
+}
+
+.use-terms > p {
+  font-size: 0.8rem;
 }
 
 /* Buttons */
@@ -44,4 +66,34 @@ button,
 .button-secondary {
   background-color: black;
   color: white;
+}
+
+/* Spacing */
+.about-section {
+  padding-bottom: 2.5rem;
+}
+
+.about-section:last-child {
+  padding-bottom: 12rem;
+}
+
+.about-section__title {
+  padding-top: 2rem;
+}
+
+.about-section__text {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.warranty {
+  margin-bottom: 6rem;
+}
+
+/* Separator */
+.use-terms::before {
+  content: "";
+  display: block;
+  margin: 1rem 1rem;
+  border: 1px solid #959595;
 }
