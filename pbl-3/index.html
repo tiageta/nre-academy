@@ -35,12 +35,14 @@
     </div>
 
     <!-- Main content -->
-    <div class="[ container-fluid ]">
+    <div class="[ container-fluid overflow-hidden ] [ px-md-5 ]">
       <!-- Course offer -->
-      <div class="[ course-offer ] [ container-fluid ]">
-        <div class="[ img-container ] [ m-4 ]">
+      <div
+        class="[ course-offer ] [ row align-items-md-center gap-md-5 ] [ m-auto pb-md-5 ]"
+      >
+        <div class="[ img-container ] [ col-md order-md-1 ] [ my-4 px-0 ]">
           <picture>
-            <source media="(min-width:650px)" srcset="img/welcome-img-sm.png" />
+            <source media="(min-width:650px)" srcset="img/welcome-img-lg.png" />
             <img
               class="[ img-fluid ]"
               src="img/welcome-img-sm.png"
@@ -49,18 +51,20 @@
           </picture>
         </div>
         <div
-          class="[ offer-wrapper ] [ d-flex flex-column gap-4 ] [ mt-5 mb-5 ]"
+          class="[ offer-wrapper ] [ col-md order-md-0 d-flex flex-column gap-4 ] [ mt-5 mb-5 px-0 ]"
         >
           <h2
             class="[ course-title ] [ d-flex justify-content-center ] [ m-0 ]"
           >
             CURSO DE FOCO<br />E PRODUTIVIDADE
           </h2>
-          <div class="[ pricing ] [ row row-cols-2 ] [ m-0 ]">
-            <p class="[ col-8 ] [ m-0 p-0 ]">
+          <div
+            class="[ pricing ] [ row row-cols-2 justify-content-between ] [ m-0 ]"
+          >
+            <p class="[ col ] [ w-auto m-0 p-0 ]">
               <small>Só:</small><br />R$ 12.430,00
             </p>
-            <p class="[ col-4 ] [ m-0 p-0 ]">
+            <p class="[ col ] [ w-auto m-0 p-0 ]">
               <small>Ou:</small><br />R$ 22,99
             </p>
           </div>
@@ -73,10 +77,18 @@
       </div>
 
       <!-- Sections -->
-      <div class="[ about-sections ]">
-        <div class="[ about-section ] [ pt-4 ]">
-          <div class="[ about-section__img img-container ]">
+      <div
+        class="[ about-sections ] [ d-md-flex flex-md-column gap-md-5 ] [ pt-4 pt-md-5 ]"
+      >
+        <div class="[ about-section ] [ row gap-md-5 align-items-md-center ]">
+          <div
+            class="[ about-section__img img-container ] [ col-md-5 order-md-1 ]"
+          >
             <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="img/decorative-img-1-lg.png"
+              />
               <img
                 class="[ img-fluid ]"
                 src="img/decorative-img-1-sm.png"
@@ -84,7 +96,7 @@
               />
             </picture>
           </div>
-          <div class="[ about-section__text ]">
+          <div class="[ about-section__text ] [ col-md order-md-0 ]">
             <h2 class="[ about-section__title ]">QUAL É O PROBLEMA?</h2>
             <p class="[ about-section__paragraph ]">
               Caros amigos, a competitividade nas transações comerciais não pode
@@ -113,9 +125,15 @@
             </p>
           </div>
         </div>
-        <div class="[ about-section ]">
-          <div class="[ about-section__img img-container ]">
+        <div class="[ about-section ] [ row gap-md-5 align-items-md-center ]">
+          <div
+            class="[ about-section__img img-container ] [ col-md-5 order-md-0 ]"
+          >
             <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="img/decorative-img-2-lg.png"
+              />
               <img
                 class="[ img-fluid ]"
                 src="img/decorative-img-2-sm.png"
@@ -123,7 +141,7 @@
               />
             </picture>
           </div>
-          <div class="[ about-section__text ]">
+          <div class="[ about-section__text ] [ col-md order-md-1 ]">
             <h2 class="[ about-section__title ]">FALA SÉRIO</h2>
             <p class="[ about-section__paragraph ]">
               O empenho em analisar o desenvolvimento contínuo de distintas
@@ -159,9 +177,15 @@
             </p>
           </div>
         </div>
-        <div class="[ about-section ]">
-          <div class="[ about-section__img img-container ]">
+        <div class="[ about-section ] [ row gap-md-5 align-items-md-center ]">
+          <div
+            class="[ about-section__img img-container ] [ col-md-5 order-1 ]"
+          >
             <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="img/decorative-img-3-lg.png"
+              />
               <img
                 class="[ img-fluid ]"
                 src="img/decorative-img-3-sm.png"
@@ -169,7 +193,7 @@
               />
             </picture>
           </div>
-          <div class="[ about-section__text ]">
+          <div class="[ about-section__text ] [ col-md order-0 ]">
             <h2 class="[ about-section__title ]">NÃO É QUESTÃO DE ESCOLHA</h2>
             <p class="[ about-section__paragraph ]">
               Acima de tudo, é fundamental ressaltar que o julgamento imparcial
@@ -201,72 +225,93 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      <!-- Warranty -->
-      <div class="[ warranty ] [ text-center ] [ mt-5 ]">
-        <div class="[ img-container ]">
-          <picture>
-            <img
-              class="[ img-fluid ]"
-              src="img/warranty-seal.svg"
-              alt="100% warranty seal"
-            />
-          </picture>
-        </div>
-        <h3 class="[ header--emphasis ] [ mb-0 ]">
-          GARANTIA <br />
-          INCONDICIONAL
-        </h3>
-        <h3>DE 7 DIAS</h3>
-        <p>
-          Se em 7 dias você achar que o nosso curso não é para você, basta nos
-          enviar um e-mail e devolveremos todo o seu dinheiro, simples assim.
-        </p>
-      </div>
-      <!-- About Author -->
-      <div class="[ about-author ]">
-        <h3 class="[ header--emphasis ] [ mb-0 ]">CONHEÇA</h3>
-        <h3>O AUTOR</h3>
-        <p>
-          Valdis Nei é um homem a frente do seu tempo, pois veio do futuro.
-          Portanto sabe mais do que todos, porque como veio do futuro sabe tudo
-          o que todo mundo sabe, mais um pouco.
-        </p>
-        <p>
-          Mas Valdis Nei não se acha espertão, é na verdade humildão, por isso
-          se todo esse texto ainda não te convenceu de comprar o fabuloso curso,
-          então por favor, compre, ajude o Valdis Nei a voltar para o futuro com
-          o Doc Brown!
-        </p>
-        <div class="[ img-container ] [ text-center ] [ pt-5 ]">
-          <picture>
-            <img
-              class="[ img-fluid ]"
-              src="img/author-img-sm.png"
-              alt="author"
-            />
-          </picture>
-        </div>
-      </div>
-      <!-- Button -->
-      <div class="[ button-container ] [ text-center ]">
-        <button
-          class="[ button-secondary border-0 rounded-3 ] [ px-5 py-3 m-4 ]"
+      <!-- Footer -->
+      <footer>
+        <!-- Warranty -->
+        <div
+          class="[ warranty ] [ row align-items-md-center justify-content-md-center text-center ] [ mt-5 ]"
         >
-          Quero aproveitar esta oferta
-        </button>
-      </div>
-      <!-- Use Terms -->
-      <div class="[ use-terms ]">
-        <h2 class="[ d-flex justify-content-center ]">
-          CURSO DE FOCO <br />
-          E PRODUTIVIDADE
-        </h2>
-        <p class="[ text-center ] [ mb-5 ]">Termos de uso</p>
-      </div>
-    </footer>
+          <div class="[ warranty_seal img-container ] [ col-md-auto ] [ ]">
+            <picture>
+              <img
+                class="[ img-fluid ]"
+                src="img/warranty-seal.svg"
+                alt="100% warranty seal"
+              />
+            </picture>
+          </div>
+          <div class="[ warranty__title ] [ col-md-auto ]">
+            <h3 class="[ header--emphasis ] [ mb-0 ]">
+              GARANTIA <br />
+              INCONDICIONAL
+            </h3>
+            <h3>DE 7 DIAS</h3>
+          </div>
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+          <div class="[ warranty__text] [ col-md-5 ] [ mt-md-3 ]">
+            <p>
+              Se em 7 dias você achar que o nosso curso não é para você, basta
+              nos enviar um e-mail e devolveremos todo o seu dinheiro, simples
+              assim.
+            </p>
+          </div>
+        </div>
+        <!-- About Author -->
+        <div
+          class="[ about-author ] [ row align-items-md-center gx-md-5 ] [ pb-md-5 ]"
+        >
+          <div class="[ about-author__text ] [ col-md-6 order-md-0 ]">
+            <div class="[ about-author__title ] [ pb-3 pb-md-4 ]">
+              <h3 class="[ header--emphasis ] [ mb-0 ]">CONHEÇA</h3>
+              <h3>O AUTOR</h3>
+            </div>
+            <div class="[ about-author__paragraph ]">
+              <p>
+                Valdis Nei é um homem a frente do seu tempo, pois veio do
+                futuro. Portanto sabe mais do que todos, porque como veio do
+                futuro sabe tudo o que todo mundo sabe, mais um pouco.
+              </p>
+              <p>
+                Mas Valdis Nei não se acha espertão, é na verdade humildão, por
+                isso se todo esse texto ainda não te convenceu de comprar o
+                fabuloso curso, então por favor, compre, ajude o Valdis Nei a
+                voltar para o futuro com o Doc Brown!
+              </p>
+            </div>
+          </div>
+          <!-- Button -->
+          <div
+            class="[ button-container end-page ] [ order-last col-md-6 order-md-2 ] [ text-center text-md-start ] [ ]"
+          >
+            <button
+              class="[ button-secondary ] [ border-0 rounded-3 ] [ px-4 py-2 mx-3 my-4 mx-md-0 px-md-5 ]"
+            >
+              Quero aproveitar esta oferta
+            </button>
+          </div>
+          <div
+            class="[ about-author__img img-container ] [ col-md-6 order-md-1 text-center ] [ pt-md-0 ]"
+          >
+            <picture>
+              <img
+                class="[ img-fluid ]"
+                src="img/author-img.png"
+                alt="author"
+              />
+            </picture>
+          </div>
+        </div>
+        <!-- Use Terms -->
+        <div class="[ use-terms ]">
+          <h2 class="[ d-flex justify-content-center d-md-inline ]">
+            CURSO DE FOCO <br />
+            E PRODUTIVIDADE
+          </h2>
+          <p class="[ text-center text-md-end ] [ mb-5 ]">Termos de uso</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
