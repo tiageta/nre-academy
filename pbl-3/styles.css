@@ -1,0 +1,47 @@
+/* Font */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #eb5819;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 19px;
+  color: black;
+}
+
+small {
+  font-size: 1rem;
+}
+
+button,
+.course-offer,
+.use-terms {
+  font-weight: 700;
+}
+
+.pricing > p {
+  font-size: clamp(1rem, calc(1rem + 1.8vw), 1.8rem);
+}
+
+.header--emphasis {
+  color: black;
+}
+
+/* Buttons */
+.button-primary {
+  background-color: #eb5819;
+  color: white;
+}
+
+.button-secondary {
+  background-color: black;
+  color: white;
+}

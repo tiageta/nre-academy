@@ -13,6 +13,17 @@
       crossorigin="anonymous"
     />
 
+    <!-- My fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
     <title>NRE Academy PBL 2</title>
   </head>
   <body>
@@ -48,15 +59,19 @@
               CURSO DE FOCO<br />E PRODUTIVIDADE
             </h2>
             <div class="[ pricing ] [ row row-cols-2 ] [ m-0 ]">
-              <p class="[ col-9 ] [ m-0 p-0 ]">
+              <p class="[ col-8 ] [ m-0 p-0 ]">
                 <small>Só:</small><br />R$ 12.430,00
               </p>
-              <p class="[ col-3 ] [ m-0 p-0 ]">
+              <p class="[ col-4 ] [ m-0 p-0 ]">
                 <small>Ou:</small><br />R$ 22,99
               </p>
             </div>
             <div class="[ button-container ] [ text-center ]">
-              <button class="[ w-100 ]">Quero aproveitar esta oferta</button>
+              <button
+                class="[ button-primary border-0 rounded-3 ] [ p-2 w-100 ]"
+              >
+                Quero aproveitar esta oferta
+              </button>
             </div>
           </div>
         </div>
@@ -183,7 +198,7 @@
         </div>
       </main>
       <footer>
-        <div class="[ warranty ]">
+        <div class="[ warranty ] [ text-center ]">
           <div class="[ img-container ]">
             <picture>
               <img
@@ -193,14 +208,19 @@
               />
             </picture>
           </div>
-          <h3>GARANTIA INCONDICIONAL</h3>
+          <h3 class="[ header--emphasis ] [ mb-0 ]">
+            GARANTIA <br />
+            INCONDICIONAL
+          </h3>
+          <h3>DE 7 DIAS</h3>
           <p>
             Se em 7 dias você achar que o nosso curso não é para você, basta nos
             enviar um e-mail e devolveremos todo o seu dinheiro, simples assim.
           </p>
         </div>
         <div class="[ about-author ]">
-          <h3>CONHEÇA</h3>
+          <h3 class="[ header--emphasis ] [ mb-0 ]">CONHEÇA</h3>
+          <h3>O AUTOR</h3>
           <p>
             Valdis Nei é um homem a frente do seu tempo, pois veio do futuro.
             Portanto sabe mais do que todos, porque como veio do futuro sabe
@@ -222,7 +242,9 @@
             </picture>
           </div>
         </div>
-        <button>Quero aproveitar esta oferta</button>
+        <button class="[ button-secondary border-0 rounded-3 ] [ p-2 w-100 ]">
+          Quero aproveitar esta oferta
+        </button>
         <div class="[ use-terms ]">
           <h2 class="[ course-title ]">
             CURSO DE FOCO <br />
