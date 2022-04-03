@@ -20,7 +20,7 @@ small {
   font-size: 1.5rem;
 }
 
-.about-section__text {
+.about-section__paragraph {
   line-height: 19px;
   color: black;
 }
@@ -81,7 +81,7 @@ button,
   padding-top: 2rem;
 }
 
-.about-section__text {
+.about-section__paragraph {
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
@@ -96,4 +96,10 @@ button,
   display: block;
   margin: 1rem 1rem;
   border: 1px solid #959595;
+}
+
+@media (min-width: 400px) {
+  .use-terms::before {
+    margin: 1rem 3rem;
+  }
 }
