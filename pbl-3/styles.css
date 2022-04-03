@@ -150,6 +150,14 @@ button,
     padding-bottom: 6rem;
   }
 
+  .course-title {
+    padding-bottom: 4rem;
+  }
+
+  .pricing {
+    padding-bottom: 3rem;
+  }
+
   /* Background */
   .about-author {
     position: relative;
