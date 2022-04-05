@@ -14,10 +14,13 @@
 body {
   font-family: "Robotica", sans-serif;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 body,
 html {
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -27,7 +30,7 @@ html {
   flex-flow: row nowrap;
   place-content: center center;
   gap: 5vh;
-  height: 100vh;
+  padding: 2vw;
 }
 
 /* Main login */
@@ -87,7 +90,6 @@ html {
 @media (max-width: 1200px) {
   .main-wrapper {
     flex-flow: column nowrap;
-    height: 100vh;
     width: auto;
   }
 
