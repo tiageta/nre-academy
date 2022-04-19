@@ -1,0 +1,179 @@
+/* Font */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #eb5819;
+  font-size: 2rem;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.about-section__title {
+  font-size: 1.5rem;
+}
+
+.about-section__paragraph {
+  line-height: 19px;
+  color: black;
+}
+
+.course-title {
+  font-size: clamp(1.5rem, calc(1rem + 4vw), 2.5rem);
+}
+
+button,
+.course-offer,
+.use-terms {
+  font-weight: 700;
+}
+
+.pricing > p {
+  line-height: 2.5rem;
+  font-size: clamp(1rem, calc(1rem + 1.8vw), 1.8rem);
+}
+
+.header--emphasis {
+  color: black;
+}
+
+.about-author > h3 {
+  font-size: 40px;
+}
+
+.use-terms > p {
+  font-size: 0.8rem;
+}
+
+/* Buttons */
+.button-primary {
+  background-color: #eb5819;
+  color: white;
+}
+
+.button-secondary {
+  background-color: black;
+  color: white;
+}
+
+/* Spacing */
+.about-section {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  margin: 0;
+}
+
+.about-section:last-child {
+  padding-bottom: 12rem;
+}
+
+.about-section__title {
+  padding-top: 2rem;
+}
+
+.about-section__paragraph {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.about-section > * {
+  padding: 0;
+}
+
+.warranty {
+  margin-bottom: 6rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-author {
+  margin: 0 auto;
+}
+
+/* Background */
+.about-author__img,
+.about-author__text {
+  position: relative;
+  padding: 3rem 0 0;
+}
+
+.about-author__img::before,
+.about-author__text::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4d9d6;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+/* Separator */
+.use-terms::before {
+  content: "";
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #959595;
+}
+
+/* Media Queries */
+@media (min-width: 760px) {
+  /* Bootstrap Overwrite */
+  .px-md-5 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  /* Spacing */
+  .button-container.end-page {
+    transform: translateY(clamp(-12rem, calc(2rem - 10vw), -4rem));
+  }
+
+  .warranty {
+    margin-bottom: 3rem;
+  }
+
+  .about-section:last-child {
+    padding-bottom: 6rem;
+  }
+
+  .course-title {
+    padding-bottom: 4rem;
+  }
+
+  .pricing {
+    padding-bottom: 3rem;
+  }
+
+  /* Background */
+  .about-author {
+    position: relative;
+    padding: 3rem 0 0;
+  }
+
+  .about-author::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d4d9d6;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+}
