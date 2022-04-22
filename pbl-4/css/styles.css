@@ -23,6 +23,39 @@ body {
   line-height: 1.2;
 }
 
+/* Headings */
+h1 {
+  font-size: clamp(3em, 2em + 3vw, 4em);
+}
+
+h2 {
+  font-size: clamp(2.5em, 1.5em + 3vw, 3em);
+}
+
+h3 {
+  font-size: clamp(1.5em, 0.5em + 3vw, 2em);
+}
+
+h4 {
+  font-size: clamp(1.5em, 1em + 3vw, 3.5em);
+}
+
+h5 {
+  font-size: clamp(2em, 1.5em + 3vw, 2.5em);
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
 /* Course */
 .course-container {
   background-color: var(--bg-color-black);
@@ -40,27 +73,11 @@ body {
   color: white;
 }
 
-h1 {
-  font-size: clamp(3em, 2.5em + 1vw, 5.5em);
-}
-
-h2 {
-  font-size: clamp(2.5em, 2em + 1vw, 5em);
-}
-
-h3 {
-  font-size: 1.8em;
-}
-
-.course time {
-  font-size: 24px;
-}
-
 .course button {
   color: white;
   border-radius: 15px;
   width: 100%;
-  max-width: 25em;
+  max-width: 20em;
   margin: auto;
   padding: 0.5em 2.5em;
   display: block;
@@ -83,13 +100,17 @@ h3 {
   }
 }
 
-.motivational h2 {
+.motivational__title {
   position: absolute;
   display: block;
   inset: 25% 0 auto 0;
 }
 
-/* Cards */
+/* Questions */
+.questions__heading {
+  font-size: 1.5em;
+}
+
 .question-card {
   margin: auto;
   width: 100%;
