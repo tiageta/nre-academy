@@ -73,6 +73,13 @@ h5 {
   color: white;
 }
 
+@media (min-width: 75em) {
+  .course .header-date {
+    margin-top: 4em;
+    margin-bottom: 0.2em !important;
+  }
+}
+
 .course button {
   color: white;
   border-radius: 15px;
@@ -82,6 +89,12 @@ h5 {
   padding: 0.5em 2.5em;
   display: block;
   background: linear-gradient(180deg, #33d16b 0%, #21a44f 100%);
+}
+
+@media (min-width: 75em) {
+  .course button {
+    padding-block: 0.75em;
+  }
 }
 
 /* Motivational */
