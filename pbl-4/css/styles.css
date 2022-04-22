@@ -25,27 +25,49 @@ body {
 
 /* Headings */
 h1 {
-  font-size: clamp(3em, 2em + 3vw, 4em);
+  font-size: 3em;
 }
 
 h2 {
-  font-size: clamp(2.5em, 1.5em + 3vw, 3em);
+  font-size: 2.5em;
 }
 
 h3 {
-  font-size: clamp(1.5em, 0.5em + 3vw, 2em);
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: clamp(1.5em, 1em + 3vw, 3.5em);
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: clamp(2em, 1.5em + 3vw, 2.5em);
+  font-size: 2em;
 }
 
 h6 {
   font-size: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 3.5em;
+  }
+
+  h5 {
+    font-size: 2.5em;
+  }
 }
 
 h1,
@@ -93,7 +115,17 @@ h5 {
 
 @media (min-width: 75em) {
   .course button {
-    padding-block: 0.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+}
+
+/* Sections */
+@media (min-width: 75em) {
+  .section-bg {
+    background-image: url("../img/bg-lighthouse.png");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
   }
 }
 
@@ -116,7 +148,9 @@ h5 {
 .motivational__title {
   position: absolute;
   display: block;
-  inset: 25% 0 auto 0;
+  top: 25%;
+  left: 0;
+  right: 0;
 }
 
 /* Questions */
@@ -128,7 +162,8 @@ h5 {
   margin: auto;
   width: 100%;
   max-width: 40em;
-  margin-block: 1.5em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .question-card button {
@@ -164,6 +199,15 @@ h5 {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-emphasis {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.font-p {
+  font-size: 20px;
 }
 
 .highlight--blue {
