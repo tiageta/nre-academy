@@ -198,6 +198,29 @@ h5 {
   margin-right: auto;
 }
 
+/* Bonus */
+.bonus {
+  background: #ffffff;
+}
+
+.bonus-card {
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  min-height: 21em;
+  max-width: 16em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bonus-card__header {
+  font-size: 18px;
+}
+
+.bonus-card__title {
+  color: #bd4c72;
+  font-size: 1.5em;
+}
+
 /* Utils */
 
 .txt-pink {
