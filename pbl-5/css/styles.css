@@ -221,6 +221,23 @@ h5 {
   font-size: 1.5em;
 }
 
+/* Pricing */
+.pricing {
+  background-color: hsl(348, 55%, 69%);
+}
+
+.pricing .content {
+  background: url("../img/bg-sky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing .button-container {
+  background-color: #3e2d5f;
+  border-radius: 8px;
+  outline: none;
+}
+
 /* Utils */
 
 .txt-pink {
