@@ -1,7 +1,3 @@
-/* Variables */
-:root {
-}
-
 /* General */
 *,
 *::before,
@@ -235,7 +231,29 @@ h5 {
 .pricing .button-container {
   background-color: #3e2d5f;
   border-radius: 8px;
-  outline: none;
+  max-width: 30em;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+}
+
+footer .bg-img {
+  background-image: url("../img/bg-vector-scnd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 1em;
+}
+
+footer .button-container {
+  background-color: #0acc6f;
+  border-radius: 8px;
+  max-width: 30em;
+}
+
+footer hr {
+  opacity: 1;
 }
 
 /* Utils */
