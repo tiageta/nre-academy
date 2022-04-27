@@ -19,29 +19,29 @@ body {
 }
 
 /* Headings */
-/* h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
+h1 {
   font-size: 1.5em;
 }
 
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
 h4 {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 h5 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h6 {
-  font-size: 1.5rem;
-} */
+  font-size: 1.125rem;
+}
 
 @media (min-width: 40em) {
   h1 {
@@ -71,6 +71,17 @@ h3,
 h4,
 h5 {
   font-weight: 700;
+  line-height: 1;
+}
+
+.button-container {
+  border-radius: 8px;
+  max-width: 30em;
+}
+
+button {
+  font-weight: 700 !important;
+  line-height: 1;
 }
 
 /* Header */
@@ -82,17 +93,8 @@ h5 {
   color: white;
 }
 
-.header .button {
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 20em;
-  margin: auto;
-  padding: 0.5em 2.5em;
-  display: block;
-  background: linear-gradient(180deg, #33d16b 0%, #21a44f 100%);
+.header .button-container {
+  background: #0acc6f;
 }
 
 .header .video-wrapper iframe,
@@ -159,14 +161,14 @@ h5 {
 }
 
 .learning .intro {
-  height: 10em;
+  height: 8rem;
 }
 
 .learning .bg-img {
   background-image: url("../img/bg-vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 7em;
+  background-position-y: 5rem;
   padding: 3em;
 }
 
@@ -187,13 +189,6 @@ h5 {
   margin-bottom: -2.5em;
 }
 
-.learning .offer hr {
-  opacity: 1;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Bonus */
 .bonus {
   background: #ffffff;
@@ -209,12 +204,12 @@ h5 {
 }
 
 .bonus-card__header {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .bonus-card__title {
   color: #bd4c72;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 /* Pricing */
@@ -230,8 +225,6 @@ h5 {
 
 .pricing .button-container {
   background-color: #3e2d5f;
-  border-radius: 8px;
-  max-width: 30em;
 }
 
 /* Footer */
@@ -248,12 +241,16 @@ footer .bg-img {
 
 footer .button-container {
   background-color: #0acc6f;
-  border-radius: 8px;
-  max-width: 30em;
 }
 
-footer hr {
-  opacity: 1;
+footer small {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 40em) {
+  footer small {
+    font-size: 1rem;
+  }
 }
 
 /* Utils */
@@ -264,8 +261,4 @@ footer hr {
 
 .font-regular {
   font-weight: 400;
-}
-
-.font-bold {
-  font-weight: 700;
 }
