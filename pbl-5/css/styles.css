@@ -43,7 +43,7 @@ h6 {
   font-size: 1.125rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 70em) {
   h1 {
     font-size: 4.5em;
     line-height: 1.2 !important;
@@ -98,7 +98,7 @@ button {
   background-image: url("../img/couple-sunset.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center;
+  background-position-y: -5%;
 }
 
 .header .button-container {
@@ -128,7 +128,7 @@ button {
   margin: auto;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 70em) {
   .header .comment {
     color: #2c2141 !important;
     font-size: 1.5em;
@@ -148,7 +148,10 @@ button {
 }
 
 .testimonials .card {
+  font-size: 14px;
   padding: 1em;
+  max-width: 25em;
+  height: fit-content;
   text-align: start;
   border-radius: 17.7829px;
   position: relative;
@@ -167,6 +170,19 @@ button {
   right: 0;
   margin: auto;
   z-index: -10;
+}
+
+@media (min-width: 70em) {
+  .testimonials .cards .card:last-child {
+    margin-top: -7em;
+  }
+}
+
+@media (min-width: 40em) {
+  .testimonials .intro,
+  .testimonials .outro {
+    font-size: 20px;
+  }
 }
 
 /* Learning */
@@ -189,6 +205,7 @@ button {
 }
 
 .learning .offer {
+  font-size: 14px;
   background: #db8495;
   padding: 1.5em;
   margin-bottom: 3.5em;
