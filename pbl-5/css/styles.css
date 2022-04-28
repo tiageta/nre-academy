@@ -43,9 +43,9 @@ h6 {
   font-size: 1.125rem;
 }
 
-@media (min-width: 70em) {
+@media (min-width: 62em) {
   h1 {
-    font-size: 4.5em;
+    font-size: 4.4em;
     line-height: 1.2 !important;
   }
 
@@ -105,6 +105,36 @@ button {
   background-position-y: -5%;
 }
 
+@media (min-width: 23em) {
+  .bg-delimiter {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 27em) {
+  .bg-delimiter {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 30em) {
+  .bg-delimiter {
+    margin-top: 7em;
+  }
+}
+
+@media (min-width: 40em) {
+  .bg-delimiter {
+    margin-top: 11em;
+  }
+}
+
+@media (min-width: 50em) {
+  .bg-delimiter {
+    margin-top: 15em;
+  }
+}
+
 .header .button-container {
   background: #0acc6f;
 }
@@ -132,7 +162,7 @@ button {
   margin: auto;
 }
 
-@media (min-width: 70em) {
+@media (min-width: 62em) {
   .header .comment {
     color: #2c2141 !important;
     font-size: 1.5em;
