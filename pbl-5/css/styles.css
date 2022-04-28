@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 h4 {
@@ -45,7 +45,8 @@ h6 {
 
 @media (min-width: 40em) {
   h1 {
-    font-size: 4em;
+    font-size: 4.5em;
+    line-height: 1.2 !important;
   }
 
   h2 {
@@ -85,12 +86,19 @@ button {
 }
 
 /* Header */
-.header {
+
+.header .title {
+  min-height: 10rem;
+}
+
+.header > .bg-img {
+  /* width: 100%;
+  aspect-ratio: 3 / 2; */
   background-color: #2c2141;
   background-image: url("../img/couple-sunset.png");
   background-repeat: no-repeat;
-  background-position: cover;
-  color: white;
+  background-size: 100% auto;
+  background-position: center;
 }
 
 .header .button-container {
@@ -98,8 +106,9 @@ button {
 }
 
 .header .video-wrapper iframe,
-.header .video-wrapper img {
-  max-width: 100%;
+.header .video-wrapper #thumbnail {
+  max-width: 610px;
+  width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   z-index: -1;
@@ -117,6 +126,13 @@ button {
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+@media (min-width: 40em) {
+  .header .comment {
+    color: #2c2141 !important;
+    font-size: 1.5em;
+  }
 }
 
 /* Testimonials */
@@ -257,6 +273,10 @@ footer small {
 
 .txt-pink {
   color: #ed839a;
+}
+
+.txt-purple {
+  color: #2c2141;
 }
 
 .font-regular {
