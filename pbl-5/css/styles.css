@@ -216,7 +216,7 @@ button {
   z-index: -10;
 }
 
-@media (min-width: 70em) {
+@media (min-width: 62em) {
   .testimonials .cards .card:last-child {
     margin-top: -7em;
   }
