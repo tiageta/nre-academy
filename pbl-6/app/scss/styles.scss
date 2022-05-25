@@ -1,6 +1,13 @@
 @import "./variables";
 // @import "../../node_modules/bootstrap/scss/bootstrap";
 
-h1 {
-  background-color: $primary;
+#main-section {
+  background-image: url(../img/bg/decorative-1-sm.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0% 55%;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(../img/bg/decorative-1.svg),
+      url(../img/bg/decorative-2.svg);
+  }
 }
