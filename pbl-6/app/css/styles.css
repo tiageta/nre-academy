@@ -11122,10 +11122,29 @@ textarea.form-control-lg {
   background-image: url(../img/bg/decorative-1-sm.svg);
   background-repeat: no-repeat;
   background-position: 100% 0, 0% 55%;
-  background-position: 100% 0%, 0% 55%;
 }
 @media (min-width: 992px) {
   #main-section {
     background-image: url(../img/bg/decorative-1.svg), url(../img/bg/decorative-2.svg);
+  }
+}
+
+#instructors-section .wrapper {
+  background-color: #f4f5f2;
+  position: relative;
+}
+#instructors-section .wrapper .photos-grid {
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 576px) {
+  #instructors-section .wrapper .photos-grid {
+    margin-top: -4rem;
+  }
+}
+@media (min-width: 768px) {
+  #instructors-section .wrapper .photos-grid {
+    margin-top: -5.5rem;
+    margin-bottom: -5rem;
   }
 }

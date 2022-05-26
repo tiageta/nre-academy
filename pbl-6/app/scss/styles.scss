@@ -1,5 +1,5 @@
 @import "./variables";
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 #main-section {
   background-image: url(../img/bg/decorative-1-sm.svg);
@@ -9,5 +9,24 @@
   @include media-breakpoint-up(lg) {
     background-image: url(../img/bg/decorative-1.svg),
       url(../img/bg/decorative-2.svg);
+  }
+}
+
+#instructors-section {
+  .wrapper {
+    background-color: #f4f5f2;
+    position: relative;
+
+    .photos-grid {
+      margin-top: -2.5rem;
+      margin-bottom: 2rem;
+      @include media-breakpoint-up(sm) {
+        margin-top: -4rem;
+      }
+      @include media-breakpoint-up(md) {
+        margin-top: -5.5rem;
+        margin-bottom: -5rem;
+      }
+    }
   }
 }
