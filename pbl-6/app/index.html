@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./scripts/bootstrap.min.js"></script>
+    <script defer src="./scripts/index.js"></script>
+
     <title>NRE Academy PBL 6</title>
   </head>
   <body>
@@ -159,6 +162,118 @@
                 quiser.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carousel-section">
+      <div class="background"></div>
+      <div
+        class="content d-flex flex-column gap-3 justify-content-center overflow-hidden"
+      >
+        <h3 class="text-center text-white mb-5">
+          O que você vai aprender no Cante as Escrituras:
+        </h3>
+
+        <div
+          id="carouselMobile"
+          class="carousel slide mobile d-md-none"
+          data-bs-interval="false"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-1.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-2.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-3.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-4.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-5.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators position-relative mt-4 d-md-none">
+            <div
+              data-bs-target="#carouselMobile"
+              data-bs-slide-to="0"
+              class="active"
+            ></div>
+            <div data-bs-target="#carouselMobile" data-bs-slide-to="1"></div>
+            <div data-bs-target="#carouselMobile" data-bs-slide-to="2"></div>
+            <div data-bs-target="#carouselMobile" data-bs-slide-to="3"></div>
+            <div data-bs-target="#carouselMobile" data-bs-slide-to="4"></div>
+          </div>
+        </div>
+
+        <div
+          id="carouselDesktop"
+          class="carousel slide desktop d-none d-md-block"
+          data-bs-interval="false"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-1.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-2.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-3.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-4.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrapper">
+                <img src="./img/lessons/lesson-5.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-buttons">
+            <button
+              class="carousel-control-prev bg-transparent"
+              href="#carouselDesktop"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next bg-transparent"
+              href="#carouselDesktop"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
         </div>
       </div>
