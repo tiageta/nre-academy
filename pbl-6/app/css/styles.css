@@ -12176,10 +12176,34 @@ textarea.form-control-lg {
 }
 
 #target-section {
-  background-image: url(../img/bg/waves.svg);
+  background-image: url(../img/bg/waves-sm.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: 150% 42%;
+  background-position: 50% 68%;
+}
+@media (min-width: 768px) {
+  #target-section {
+    background-image: url(../img/bg/waves.svg);
+    background-size: contain;
+    background-position: 0 75%;
+  }
+}
+#target-section .guitar-img-container {
+  margin-left: -10rem;
+}
+@media (min-width: 576px) {
+  #target-section .guitar-img-container {
+    margin-left: 0;
+  }
+}
+#target-section .guitar-img-container img {
+  width: 135%;
+}
+@media (min-width: 576px) {
+  #target-section .guitar-img-container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 #offers-section {

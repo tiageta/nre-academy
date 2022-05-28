@@ -171,10 +171,29 @@
 }
 
 #target-section {
-  background-image: url(../img/bg/waves.svg);
+  background-image: url(../img/bg/waves-sm.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: 150% 42%;
+  background-position: 50% 68%;
+  @include media-breakpoint-up(md) {
+    background-image: url(../img/bg/waves.svg);
+    background-size: contain;
+    background-position: 0 75%;
+  }
+
+  .guitar-img-container {
+    margin-left: -10rem;
+    @include media-breakpoint-up(sm) {
+      margin-left: 0;
+    }
+    img {
+      width: 135%;
+      @include media-breakpoint-up(sm) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 #offers-section {
