@@ -12174,3 +12174,70 @@ textarea.form-control-lg {
   background-size: contain;
   background-position: bottom;
 }
+
+#offers-section {
+  background-image: url(../img/bg/decorative-3-sm.png), url(../img/bg/decorative-5.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+}
+@media (min-width: 992px) {
+  #offers-section {
+    background-image: url(../img/bg/decorative-3.png), url(../img/bg/decorative-4.png);
+    background-size: 22rem, 10rem;
+    background-position: right -0.2rem, left bottom;
+  }
+}
+#offers-section .price-cards {
+  max-width: 25em;
+  background-color: #eee;
+  position: relative;
+  margin-top: 10rem;
+}
+@media (min-width: 992px) {
+  #offers-section .price-cards {
+    max-width: 50em;
+  }
+}
+#offers-section .price-cards .annual-plan {
+  background-image: url(../img/bg/annual-plan-waves.svg), linear-gradient(180deg, #547364 0%, #203a39 100%);
+  background-position: right;
+  background-repeat: no-repeat;
+  box-shadow: 10px 30px 30px rgba(95, 116, 68, 0.3);
+  border-radius: 20px;
+  position: relative;
+  bottom: 6.5rem;
+}
+#offers-section .price-cards .annual-plan ul {
+  list-style-image: url(../img/white-check.svg);
+  margin-left: -6px;
+}
+#offers-section .price-cards .monthly-plan {
+  margin-top: -6.5rem;
+}
+@media (min-width: 992px) {
+  #offers-section .price-cards .monthly-plan {
+    margin-top: 0;
+  }
+  #offers-section .price-cards .monthly-plan .info {
+    position: relative;
+    bottom: 3.5rem;
+  }
+  #offers-section .price-cards .monthly-plan .btn {
+    position: relative;
+    bottom: 6.5rem;
+  }
+}
+#offers-section .price-cards .monthly-plan ul {
+  list-style-image: url(../img/green-check.svg);
+  margin-left: -6px;
+}
+@media (min-width: 992px) {
+  #offers-section .price-cards .annual-plan,
+#offers-section .price-cards .monthly-plan {
+    margin-bottom: -6.5rem;
+  }
+}
+#offers-section .price-cards .list-item {
+  position: relative;
+  top: -4px;
+}
