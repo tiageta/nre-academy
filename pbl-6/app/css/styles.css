@@ -12167,3 +12167,10 @@ textarea.form-control-lg {
   transform: translateX(0);
   opacity: 100%;
 }
+
+#target-section {
+  background-image: url(../img/bg/waves.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
