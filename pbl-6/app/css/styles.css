@@ -12082,6 +12082,13 @@ textarea.form-control-lg {
     background-position: left, bottom;
   }
 }
+#carousel-section .background::after {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  position: absolute;
+  inset: auto 0 0 0;
+}
 #carousel-section .content .carousel .carousel-inner {
   width: 180%;
   margin-left: -40%;
