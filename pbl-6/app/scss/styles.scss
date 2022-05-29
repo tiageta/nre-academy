@@ -10,6 +10,12 @@
     background-image: url(../img/bg/decorative-1.svg),
       url(../img/bg/decorative-2.svg);
   }
+
+  button {
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+  }
 }
 
 #instructors-section {

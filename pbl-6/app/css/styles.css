@@ -12028,6 +12028,11 @@ textarea.form-control-lg {
     background-image: url(../img/bg/decorative-1.svg), url(../img/bg/decorative-2.svg);
   }
 }
+@media (min-width: 768px) {
+  #main-section button {
+    width: 75%;
+  }
+}
 
 #instructors-section .wrapper {
   background-color: #f4f5f2;
