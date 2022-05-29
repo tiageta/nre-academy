@@ -270,3 +270,52 @@
 #steps-section {
   background-color: #f4f5f2;
 }
+
+#reviews-section {
+  .review-card {
+    background-color: #f4f5f2;
+    background-image: url(../img/reviews/“.svg);
+    background-blend-mode: multiply;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    min-height: 260px;
+    width: 75vw;
+    max-width: 520px;
+    padding: 3rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin: auto;
+  }
+  .mobile {
+    .mobile-review {
+      .triangle-down {
+        position: absolute;
+        transform: translateY(90%);
+        left: 1rem;
+        bottom: 0;
+        @include media-breakpoint-up(sm) {
+          transform: translateY(100%);
+          left: 4rem;
+        }
+      }
+    }
+  }
+  .desktop {
+    .user {
+      cursor: pointer;
+    }
+    .reviews {
+      .triangle-left {
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        transform: translateX(-95%);
+      }
+    }
+  }
+}

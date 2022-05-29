@@ -53,3 +53,23 @@ function getCardClass(index, device) {
       return "most-outer-col";
   }
 }
+
+// Review ballon change
+const users = [
+  document.querySelector(".user-1"),
+  document.querySelector(".user-2"),
+  document.querySelector(".user-3"),
+];
+
+const review = document.querySelector(".desktop-review");
+const triangle = document.querySelector(".triangle-left");
+
+users.forEach((user, index) =>
+  user.addEventListener("click", () => {
+    review.src = `./img/reviews/user-${index + 1}-review.svg`;
+    triangle.style.top = `${2 + 6.5 * index}rem`;
+    users.forEach((user) => user.classList.add("opacity-50"));
+    user.classList.remove("opacity-50");
+    console.log(users);
+  })
+);
