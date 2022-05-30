@@ -319,3 +319,19 @@
     }
   }
 }
+
+#questions-section {
+  .accordion-item {
+    &,
+    button {
+      background-color: #f4f5f2;
+      border-radius: 10px;
+    }
+    button {
+      font-weight: 700;
+      min-height: 5em;
+    }
+    border: none;
+    margin-bottom: 2em;
+  }
+}

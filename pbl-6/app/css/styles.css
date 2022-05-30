@@ -12322,3 +12322,17 @@ textarea.form-control-lg {
   top: 2rem;
   transform: translateX(-95%);
 }
+
+#questions-section .accordion-item {
+  border: none;
+  margin-bottom: 2em;
+}
+#questions-section .accordion-item,
+#questions-section .accordion-item button {
+  background-color: #f4f5f2;
+  border-radius: 10px;
+}
+#questions-section .accordion-item button {
+  font-weight: 700;
+  min-height: 5em;
+}
