@@ -73,3 +73,9 @@ users.forEach((user, index) =>
     console.log(users);
   })
 );
+
+// exit modal
+window.addEventListener("beforeunload", (event) => {
+  event.preventDefault();
+  new bootstrap.Modal("#exitModal").show();
+});

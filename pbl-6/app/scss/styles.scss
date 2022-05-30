@@ -373,3 +373,23 @@
     }
   }
 }
+
+#exitModal {
+  .modal-header {
+    background-color: rgba(#b8ed75, 0.3);
+  }
+  .modal-body {
+    background-color: rgba(#f17128, 0.3);
+    background-image: url(../img/bg/decorative-4.png);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: left bottom;
+
+    @include media-breakpoint-up(lg) {
+      background-image: url(../img/bg/decorative-1.svg),
+        url(../img/bg/decorative-4.png);
+      background-size: 40rem, 20rem;
+      background-position: right top, left bottom;
+    }
+  }
+}
