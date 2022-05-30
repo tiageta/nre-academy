@@ -1,6 +1,10 @@
 @import "./variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
 #main-section {
   background-image: url(../img/bg/decorative-1-sm.svg);
   background-repeat: no-repeat;
