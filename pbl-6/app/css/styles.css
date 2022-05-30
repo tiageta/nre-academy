@@ -12336,3 +12336,39 @@ textarea.form-control-lg {
   font-weight: 700;
   min-height: 5em;
 }
+
+#formsModal .modal-dialog {
+  padding-top: 30vh;
+}
+@media (min-width: 576px) {
+  #formsModal .modal-dialog {
+    padding-top: 0;
+  }
+}
+#formsModal .modal-content {
+  background-image: url(../img/bg/decorative-6.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  border-radius: 20px 20px 0 0;
+}
+@media (min-width: 576px) {
+  #formsModal .modal-content {
+    border-radius: 20px;
+  }
+}
+#formsModal .modal-content .modal-body {
+  padding-top: 6em;
+  padding-bottom: 0.25em;
+}
+#formsModal .modal-content .modal-body input {
+  border: none;
+  border-radius: 5px;
+  background-color: #ebeee5;
+  color: #5f5f5f;
+  padding: 10px 12px;
+}
+#formsModal .modal-content .modal-body .disclaimer {
+  font-size: 0.75em;
+  line-height: 1em;
+}

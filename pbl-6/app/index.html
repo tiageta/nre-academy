@@ -31,7 +31,12 @@
               composição e todas as habilidades necessárias para um músico
               cristão.
             </p>
-            <button class="btn btn-secondary rounded-pill fw-bold">
+            <button
+              class="btn btn-secondary rounded-pill fw-bold"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#formsModal"
+            >
               Fazer minha inscrição
             </button>
           </div>
@@ -135,6 +140,9 @@
             </div>
             <div
               class="button btn btn-secondary col-8 col-xl-3 mx-auto rounded-pill fw-bold"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#formsModal"
             >
               Fazer minha inscrição
             </div>
@@ -335,6 +343,9 @@
         <div class="d-grid mt-5 mb-5">
           <div
             class="button btn btn-secondary col-8 col-xl-3 mx-auto rounded-pill fw-bold"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#formsModal"
           >
             Fazer minha inscrição
           </div>
@@ -445,7 +456,12 @@
               </div>
 
               <div class="d-grid">
-                <div class="btn btn-secondary rounded-pill fw-bold">
+                <div
+                  class="btn btn-secondary rounded-pill fw-bold"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#formsModal"
+                >
                   Assinar Plano Atual
                 </div>
               </div>
@@ -480,7 +496,12 @@
               </div>
 
               <div class="d-grid mt-3">
-                <div class="btn btn-secondary rounded-pill fw-bold">
+                <div
+                  class="btn btn-secondary rounded-pill fw-bold"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#formsModal"
+                >
                   Assinar Plano Mensal
                 </div>
               </div>
@@ -988,5 +1009,66 @@
         </div>
       </div>
     </footer>
+
+    <!-- Forms Modal -->
+    <div class="modal fade" id="formsModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div
+            class="modal-body position-relative d-grid align-items-center overflow-hidden"
+          >
+            <form>
+              <img
+                src="./img/logo-2.svg"
+                alt=""
+                class="img-fluid d-block m-auto mb-5"
+              />
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nome completo"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Melhor e-mail"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Telefone com DDD"
+                />
+              </div>
+
+              <div class="d-grid mb-5">
+                <button
+                  type="submit"
+                  class="btn btn-secondary rounded-pill fw-bold"
+                >
+                  Continuar minha inscrição
+                </button>
+              </div>
+              <p class="disclaimer text-center">
+                <small
+                  >Prometemos não utilizar suas informações de contato para
+                  enviar qualquer tipo de SPAM. Os dados coletados são tratados
+                  nos termos da Lei Geral de Proteção de Dados e você pode se
+                  descadastrar da nossa lista de contatos a qualquer
+                  momento.</small
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
