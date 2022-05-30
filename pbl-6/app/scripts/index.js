@@ -70,7 +70,7 @@ users.forEach((user, index) =>
     triangle.style.top = `${2 + 6.5 * index}rem`;
     users.forEach((user) => user.classList.add("opacity-50"));
     user.classList.remove("opacity-50");
-    console.log(users);
+    console.log(review.src);
   })
 );
 

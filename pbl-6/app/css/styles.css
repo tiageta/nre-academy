@@ -12037,6 +12037,9 @@ body {
     width: 75%;
   }
 }
+#main-section #info-section .text {
+  hyphens: auto;
+}
 
 #instructors-section .wrapper {
   background-color: #f4f5f2;
@@ -12349,6 +12352,11 @@ body {
     padding-top: 0;
   }
 }
+@media (max-height: 600px) {
+  #formsModal .modal-dialog {
+    padding-top: 0;
+  }
+}
 #formsModal .modal-content {
   background-image: url(../img/bg/decorative-6.svg);
   background-repeat: no-repeat;
@@ -12360,6 +12368,12 @@ body {
   #formsModal .modal-content {
     border-radius: 20px;
   }
+}
+#formsModal .modal-content .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }
 #formsModal .modal-content .modal-body {
   padding-top: 6em;
@@ -12384,7 +12398,7 @@ body {
   background-color: rgba(241, 113, 40, 0.3);
   background-image: url(../img/bg/decorative-4.png);
   background-repeat: no-repeat;
-  background-size: 20rem;
+  background-size: 10rem;
   background-position: left bottom;
 }
 @media (min-width: 992px) {

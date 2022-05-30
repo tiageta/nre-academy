@@ -20,6 +20,12 @@ body {
       width: 75%;
     }
   }
+
+  #info-section {
+    .text {
+      hyphens: auto;
+    }
+  }
 }
 
 #instructors-section {
@@ -346,6 +352,9 @@ body {
     @include media-breakpoint-up(sm) {
       padding-top: 0;
     }
+    @media (max-height: 600px) {
+      padding-top: 0;
+    }
   }
 
   .modal-content {
@@ -356,6 +365,13 @@ body {
     border-radius: 20px 20px 0 0;
     @include media-breakpoint-up(sm) {
       border-radius: 20px;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
     }
 
     .modal-body {
@@ -386,7 +402,7 @@ body {
     background-color: rgba(#f17128, 0.3);
     background-image: url(../img/bg/decorative-4.png);
     background-repeat: no-repeat;
-    background-size: 20rem;
+    background-size: 10rem;
     background-position: left bottom;
 
     @include media-breakpoint-up(lg) {
